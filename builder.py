@@ -97,7 +97,7 @@ def build_tag (parts):
 	elif tag == 'anchor':
 		return build_table_anchor (parts [2])
 
-	elif tag == 'link':
+	elif tag == 'link' or tag == 'a':
 		return build_link (parts [2])
 
 	elif tag == 'st':
