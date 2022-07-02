@@ -1,0 +1,110 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: monospace, serif;
+	overflow: visible;
+}
+
+body {
+	padding-bottom: 100pt;
+}
+
+.marked {
+	background-color: #FF3;
+}
+
+.quote {
+	margin: 10pt;
+	font-style: italic;
+	background-color: beige;
+}
+
+a:link {
+	color: #000;
+	text-decoration: underline;
+}
+  
+a:visited {
+	color: #000;
+}
+
+a:hover {
+	color: blue;
+}
+  
+a:active {
+	color: blue;
+}
+
+
+#table {
+	top: 0px;
+	width: 60%;
+	left: 20%;
+	position: fixed;
+	background-color: #EEE;
+	max-height: 100%;
+	overflow-y: scroll;
+	padding-bottom: 100pt;
+}
+
+#table li {
+	margin: 10pt;
+	list-style-type: none;
+}
+
+#table_switch_panel {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 3;
+	text-align: center;
+	background-color: #EFEFEF;
+}
+
+#urmam {
+	position: relative;
+	width: 60%;
+	left: 20%;
+}
+
+@media (max-width : 800px) {
+	#urmam {
+		width: 100%;
+		left: 0px;
+	}
+	#table {
+		width: 100%;
+		left: 0px;
+	}
+}
+
+#content {
+	margin-left: 10pt;
+	text-align: justify;
+}
+
+#content table {
+	min-width: 100%;
+	overflow-x: scroll;
+}
+
+#content td {
+	padding: 5pt;
+}
+
+#content h2 {
+	padding-top: 10pt;
+	padding-bottom: 10pt;
+	text-align: left;
+}
+
+.anchor_4 {
+	padding: 15pt;
+}
+
+#credits p {
+	width: 100%;
+	text-align: center;
+}

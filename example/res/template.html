@@ -1,0 +1,39 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<title>
+		seti-6sem-th
+	</title>
+</head>
+<body>
+<div id="urmam">
+	<div id="content">
+		[ext]	example
+	</div>
+	
+	<div id="table" style="display: none;">
+	[table]
+	</div>
+
+	<div id="table_switch_panel">
+		<p>
+			table of contents
+			<input id="table_switch" type="checkbox">
+		</p>
+	</div>
+
+<script>
+const table_switch = document.getElementById ('table_switch')
+const table = document.getElementById ('table')
+
+table_switch.addEventListener('change', (event) => {
+  if (event.currentTarget.checked) {
+    table.style.display = 'block'
+  } else {
+	table.style.display = 'none'
+  }
+})
+</script>
+</div>
+</body>
+</html>

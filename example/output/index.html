@@ -1,0 +1,144 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<title>
+		seti-6sem-th
+	</title>
+</head>
+<body>
+<div id="urmam">
+	<div id="content">
+<a id="anchor_0"></a>
+<a href="#header_0">
+<h2    class="anchor_2   ">  1. LAN Design. Selecting Network Devices.</h2   >
+</a>
+<a target="_blank" href="http://synammic.akhost.ru/cisco/v6/3/#1.2.1.1">
+<p>1.2.1.1 Switch Platforms</p></a><a target="_blank" href="http://synammic.akhost.ru/cisco/v6/3/#1.2.2.1">
+<p>1.2.2.1 Router Requirements</p></a><a target="_blank" href="http://synammic.akhost.ru/cisco/v6/3/#1.2.3.2">
+<p>1.2.3.2 In-Band versus Out-of-Band Management</p></a><pre>--------</pre><p>There are 
+<span class="marked">five categories</span>
+ of switches for enterprise networks:</p><p class="li_st"><b> - 1. Campus LAN Switches - </b> To scale network performance in an enterprise LAN, there are core, distribution, access, and compact switches. These switch platforms 
+<span class="marked">vary from fanless switches with eight fixed ports to 13-blade switches supporting hundreds of ports.</span>
+</p><p class="li_st"><b> - 2. Cloud-Managed Switches - </b> The Cisco Meraki cloud-managed access switches 
+<span class="marked">enable virtual stacking of switches</span>
+. They 
+<span class="marked">monitor and configure thousands of switch ports over the web</span>
+, without the intervention of onsite IT staff.</p><p class="li_st"><b> - 3. Data Center Switches - </b> A data center should be built based on switches that 
+<span class="marked">promote infrastructure scalability, operational continuity, and transport flexibility.</span>
+</p><p class="li_st"><b> - 4. Service Provider Switches - </b> Service provider switches fall under 
+<span class="marked">two categories:</span>
+ aggregation switches and Ethernet access switches.</p><p>
+<span class="marked">Aggregation switches</span>
+ are carrier-grade Ethernet switches that 
+<span class="marked">aggregate traffic at the edge of a network</span>
+.</p><p>
+<span class="marked">Service provider Ethernet access</span>
+ switches feature 
+<span class="marked">application intelligence, unified services, virtualization, integrated security, and simplified management.</span>
+</p><p class="li_st"><b> - 5. Virtual Networking - </b> Networks are becoming increasingly virtualized. Cisco Nexus virtual networking switch platforms 
+<span class="marked">provide secure multi-tenant services</span>
+ by adding 
+<span class="marked">virtualization intelligence technology to the data center network</span>
+.</p><a id="anchor_1"></a>
+<a href="#header_1">
+<h4  class="anchor_4 "> Common Business Considerations When Selecting Switch Equipment</h4 >
+</a>
+<p class="li_st"><b> - Cost - </b> The cost of a switch will depend on the 
+<span class="marked">number and speed of the interfaces</span>
+, supported 
+<span class="marked">features</span>
+, and 
+<span class="marked">expansion capability.</span>
+</p><p class="li_st"><b> - Port Density - </b> Network switches must 
+<span class="marked">support the appropriate number of devices</span>
+ on the network. The port density of a switch refers to the 
+<span class="marked">number of ports available on a single switch</span>
+.</p><p class="li_st"><b> - Power - </b> It is now 
+<span class="marked">common to power</span>
+ access points, IP phones, and even compact switches 
+<span class="marked">using Power over Ethernet (PoE)</span>
+. In addition to PoE considerations, some chassis-based switches support redundant power supplies.</p><p class="li_st"><b> - Reliability - </b> The switch should 
+<span class="marked">provide continuous access to the network</span>
+.</p><p class="li_st"><b> - Port Speed - </b> The 
+<span class="marked">speed of the network connection</span>
+ is of primary concern to end users.</p><p class="li_st"><b> - Frame Buffers - </b> The 
+<span class="marked">ability</span>
+ of the switch 
+<span class="marked">to store frames</span>
+ is important 
+<span class="marked">in a network where</span>
+ there may be 
+<span class="marked">congested ports to servers or other areas</span>
+ of the network.</p><p class="li_st"><b> - Scalability - </b> The number of users on a network typically grows over time; therefore, the switch should 
+<span class="marked">provide the opportunity for growth.</span>
+</p><p class="li_st"><b> - Forwarding Rates - </b> Less expensive, 
+<span class="marked">lower performing</span>
+ switches can be used at the 
+<span class="marked">access layer</span>
+, and more expensive, 
+<span class="marked">higher performing</span>
+ switches can be used at the 
+<span class="marked">distribution and core layers</span>
+, where the forwarding rate has a greater impact on network performance.</p><p class="quote">The network designer must also consider the issue of uplink bottlenecks: A series of fixed configuration switches may consume many additional ports for bandwidth aggregation between switches, for the purpose of achieving target performance. With a single modular switch, bandwidth aggregation is less of an issue, because the backplane of the chassis can provide the necessary bandwidth to accommodate the devices connected to the switch port line cards.</p><a id="anchor_2"></a>
+<a href="#header_2">
+<h4  class="anchor_4 "> Router Requirements</h4 >
+</a>
+<p>Routers use the network portion of the destination IP address to 
+<span class="marked">route packets</span>
+ to the proper destination. They select an alternate path if a link or path goes down. All hosts on a local network specify the IP address of the local router interface in their IP configuration. This router interface is the default gateway. The 
+<span class="marked">ability to route efficiently and recover from network link failures</span>
+ is critical to delivering packets to their destination.</p><p>Routers also serve 
+<span class="marked">other</span>
+ beneficial 
+<span class="marked">functions</span>
+:</p><p class="li_st"><b> - Provide broadcast containment - </b> Routers limit broadcasts to the local network.</p><p class="li_st"><b> - Connect remote locations - </b> Routers can be used to interconnect geographically separated locations.</p><p class="li_st"><b> - Group users logically by application or department - </b> Routers logically group users, such as departments within a company, who have common needs or require access to the same resources.</p><p class="li_st"><b> - Provide enhanced security - </b> Routers can be configured with access control lists to filter unwanted traffic.</p><a id="anchor_3"></a>
+<a href="#header_3">
+<h4  class="anchor_4 "> Managing Devices</h4 >
+</a>
+<p>
+<span class="marked">Out-of-band</span>
+ management is used for 
+<span class="marked">initial configuration or</span>
+ when a network 
+<span class="marked">connection is unavailable</span>
+. Configuration using out-of-band management requires:</p><p><b> - Direct connection to console or AUX port</b></p><p><b> - Terminal emulation client</b></p><p>
+<span class="marked">In-band</span>
+ management is used to 
+<span class="marked">monitor and make configuration changes</span>
+ to a network device over a network connection. Configuration using in-band management requires:</p><p><b> - At least one network interface on the device to be connected and operational</b></p><p><b> - Telnet, SSH, HTTP, or HTTPS to access a Cisco device</b></p><p class="quote">The hierarchical network design model divides network functionality into the access layer, the distribution layer, and the core layer. The campus wired LAN enables communications between devices in a building or group of buildings, as well as interconnection to the WAN and internet edge at the network core. A well-designed network controls traffic and limits the size of failure domains. Routers and switches can be deployed in pairs so that the failure of a single device does not cause service disruptions. A network design should include an IP addressing strategy, scalable, and fast-converging routing protocols, appropriate Layer 2 protocols, and modular or clustered devices that can be easily upgraded to increase capacity. A mission-critical server should have a connection to two different access layer switches. It should have redundant modules when possible, and a power backup source. It may be appropriate to provide multiple connections to one or more ISPs. Security monitoring systems and IP telephony systems must have high availability and often have special design considerations. It is important to deploy the appropriate type of routers and switches for a given set of requirements, features and specifications, and expected traffic flow.</p>	</div>
+	
+	<div id="table" style="display: none;">
+<ul id="table_list" class="hidden">
+<li><a id="header_0"></a>
+<a href="#anchor_0"><span class="table_2   ">  1. LAN Design. Selecting Network Devices.</span></a></li>
+<li><a id="header_1"></a>
+<a href="#anchor_1"><span class="table_4 "> Common Business Considerations When Selecting Switch Equipment</span></a></li>
+<li><a id="header_2"></a>
+<a href="#anchor_2"><span class="table_4 "> Router Requirements</span></a></li>
+<li><a id="header_3"></a>
+<a href="#anchor_3"><span class="table_4 "> Managing Devices</span></a></li>
+</ul>
+	</div>
+
+	<div id="table_switch_panel">
+		<p>
+			table of contents
+			<input id="table_switch" type="checkbox">
+		</p>
+	</div>
+
+<script>
+const table_switch = document.getElementById ('table_switch')
+const table = document.getElementById ('table')
+
+table_switch.addEventListener('change', (event) => {
+  if (event.currentTarget.checked) {
+    table.style.display = 'block'
+  } else {
+	table.style.display = 'none'
+  }
+})
+</script>
+</div>
+<a id="credits" href="https://github.com/mkentrru/simple-html-builder" target="_blank"><p>parsed with: mkentrru/simple-html-builder</p></a></body>
+</html>
